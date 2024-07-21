@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Browserfactory {
 
 	public WebDriver driver;
-public int browserType = 1; // 1 - chrome, 2 - Edge, 3 - FF
+public int browserType = 4; // 1 - chrome, 2 - Edge, 3 - FF
 	
 	public WebDriver browserInstantiate() {
 		if(driver == null) {

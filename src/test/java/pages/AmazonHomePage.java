@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class AmazonHomePage {
 	
-	String sURL= "https://www.amazon.in/";
+	String sURL= PropertyReader.readDataFromPropertyFile("environment", "amazon");
 	private WebDriver driver;
 	private By productNameTxt=By.id("twotabsearchtextbox");
 	private By prodCatagoryDrop = By.id("searchDropdownBox");

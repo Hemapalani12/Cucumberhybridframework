@@ -4,10 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import util.Propertyreader;
+
 public class EbayHomePage {
 
 	private WebDriver driver;
-	public String sURL = PropertyReader.readDataFromPropertyFile("environment", "ebay");
+	public String sURL = Propertyreader.readDataFromPropertyFile("url", "ebay");
 	private By productNameTxt = By.id("gh-ac");
 	private By prodCatagoryDrop = By.id("gh-cat");
 	private By searchButton = By.id("gh-btn");

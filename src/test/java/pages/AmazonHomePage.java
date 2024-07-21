@@ -5,10 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import util.Propertyreader;
+
 public class AmazonHomePage {
 	
-	String sURL= PropertyReader.readDataFromPropertyFile("environment", "amazon");
-	private WebDriver driver;
+	String sURL= Propertyreader.readDataFromPropertyFile("url","amazon");
+private  WebDriver driver;
 	private By productNameTxt=By.id("twotabsearchtextbox");
 	private By prodCatagoryDrop = By.id("searchDropdownBox");
 	private By searchButton = By.id("nav-search-submit-button");

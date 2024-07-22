@@ -11,7 +11,7 @@ Feature: Ebay Product Search
   When Enter the multiple product name as <ProductName> and multiple product catagory as <ProductCatagory>
   And click on search button
   Then Validate the search result
-  And Close browser
+  #And Close browser
   
   Examples:
   | ProductName | ProductCatagory           |
